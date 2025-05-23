@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ATF-container {
+  width: 100vw;
+  min-height: auto;
+  background-image: url("./images/Background-ATF-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.ATF-container .logo-DS24-wrapper {
+  display: flex;
+  height: 34px;
+  justify-content: flex-end;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+
+.ATF-container .ATF-content {
+  padding-top: 146.5px;
+  padding-right: 120px;
+  padding-left: 160px;
+}
+
+/* .ATF-container .main-title,
+.ATF-container .second-title,
+.ATF-container .subtitle,
+.ATF-container .info {
+  padding-bottom: 20px;
+} */
+
+.ATF-container .main-title,
+.ATF-container .second-title {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+
+.ATF-container .main-title {
+  font-size: 36px;
+}
+
+.ATF-container .second-title {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.ATF-container .subtitle {
+  font-size: 30px;
+  width: 590px;
+  height: 210px;
+  margin-bottom: 120px;
+}
+
+.ATF-container .logo-DS24-wrapper .logo-DS24-1 {
+  width: 33.83px;
+  height: 34.31px;
+  margin-right: 7px;
+}
+
+.ATF-container .logo-DS24-wrapper .logo-DS24-2 {
+  width: 151.44px;
+  height: 29.35px;
+}
+
+.ATF-container .info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.ATF-container .info .info-1,
+.ATF-container .info .info-2 {
+  display: flex;
+}
+
+.ATF-container .info img {
+  width: 48px;
+  height: 48px;
+}
+
+.ATF-container .info .info-1 .info-1-text {
+  width: 243px;
+  height: 50px;
+  color: red;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-left: 10px;
+}
+
+.ATF-container .info .info-2 .info-2-text {
+  width: 243px;
+  height: 50px;
+  color: orange;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-left: 10px;
+}
+
+.ATF-container .ATF-button {
+  color: #ffffff;
+  background-color: #ad8d49;
+
+  width: 327px;
+  height: 58px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1201px) {
+  .ATF-container .ATF-button {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ATF-container .ATF-content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .ATF-container .main-title {
+    font-size: 24px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .ATF-container .second-title {
+    font-size: 30px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .ATF-container .subtitle {
+    width: auto;
+    height: auto;
+  }
+
+  .ATF-container .info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ATF-container .info .info-1,
+  .ATF-container .info .info-2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ATF-container .info .info-1 .info-1-text,
+  .ATF-container .info .info-2 .info-2-text {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 475px) {
+  .ATF-container .ATF-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .ATF-container .subtitle {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+  }
+
+  .ATF-container .ATF-button {
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+
+  .ATF-container .info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ATF-container .info img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ATF-container .info .info-1 .info-1-text,
+  .ATF-container .info .info-2 .info-2-text {
+    width: 100%;
+    font-size: 16px;
+  }
+}
