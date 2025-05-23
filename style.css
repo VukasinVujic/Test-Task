@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: #ffffff;
+  --gold: #ad8d49;
+  --black: #000000;
+}
+
 .ATF-container {
   width: 100vw;
   min-height: auto;
@@ -11,7 +17,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .ATF-container .logo-DS24-wrapper {
@@ -27,13 +33,6 @@
   padding-right: 120px;
   padding-left: 160px;
 }
-
-/* .ATF-container .main-title,
-.ATF-container .second-title,
-.ATF-container .subtitle,
-.ATF-container .info {
-  padding-bottom: 20px;
-} */
 
 .ATF-container .main-title,
 .ATF-container .second-title {
@@ -92,7 +91,6 @@
 .ATF-container .info .info-1 .info-1-text {
   width: 243px;
   height: 50px;
-  color: red;
   font-family: Helvetica Neue;
   font-weight: 400;
   font-size: 21px;
@@ -104,7 +102,6 @@
 .ATF-container .info .info-2 .info-2-text {
   width: 243px;
   height: 50px;
-  color: orange;
   font-family: Helvetica Neue;
   font-weight: 400;
   font-size: 21px;
@@ -114,8 +111,8 @@
 }
 
 .ATF-container .ATF-button {
-  color: #ffffff;
-  background-color: #ad8d49;
+  color: var(--white);
+  background-color: var(--gold);
 
   width: 327px;
   height: 58px;
@@ -219,5 +216,98 @@
   .ATF-container .info .info-2 .info-2-text {
     width: 100%;
     font-size: 16px;
+  }
+}
+
+.intro {
+  background-color: var(--gold);
+  padding: 80px 40px;
+  color: var(--white);
+}
+
+.intro .intro-1 {
+  margin-bottom: 50px;
+}
+
+.intro .intro-1,
+.intro .intro-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro .intro-1 .intro-1-text {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro .intro-1 .intro-button {
+  padding: 16px 24px 30px;
+  color: var(--white);
+  background-color: var(--black);
+  width: 100%;
+  max-width: 600px;
+  height: 26px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.intro .intro-separator {
+  width: 200px;
+  border: none;
+  height: 5px;
+  background-color: var(--white);
+  margin: 40px 0;
+}
+
+.intro .intro-title {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro .intro-text {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media (max-width: 679px) {
+  .intro .intro-1 .intro-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 16px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 679px) {
+  .intro .intro-1 .intro-button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 404px) {
+  .intro .intro-title {
+    font-size: 40px;
   }
 }
