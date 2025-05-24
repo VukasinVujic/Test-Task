@@ -311,3 +311,134 @@
     font-size: 40px;
   }
 }
+
+/* with dinner there is duplicate code , fix that later */
+.dinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dinner .dinnerFood {
+  display: flex;
+}
+
+.dinner .dinnerFood .title-text {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.dinner .dinnerFood .title-text .title {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.dinner .dinnerFood .title-text .text {
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.dinner .dinnerFood .dinner-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dinner .dinnerParty {
+  display: flex;
+}
+
+.dinner .dinnerParty .title-text {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.dinner .dinnerParty .dinner-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dinner .dinnerParty .title-text .title {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.dinner .dinnerParty .title-text .text {
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1318px) {
+  .dinner .dinnerFood .title-text {
+    padding: 30px;
+  }
+
+  .dinner .dinnerFood .title-text .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .dinner .dinnerParty .title-text .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1078px) {
+  .dinner .dinnerFood {
+    display: flex;
+    flex-direction: column;
+  }
+  .dinner .dinnerFood .title-text {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .dinner .dinnerFood .title-text .title {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .dinner .dinnerFood .dinner-image {
+    width: 100%;
+  }
+
+  .dinner .dinnerParty {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .dinner .dinnerParty .title-text {
+    width: 100%;
+  }
+
+  .dinner .dinnerParty .dinner-image {
+    width: 100%;
+  }
+}
