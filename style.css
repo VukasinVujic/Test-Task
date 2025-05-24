@@ -9,7 +9,7 @@
   --gold: #ad8d49;
   --black: #000000;
 }
-
+/* duplicate code with .event class fix it latter */
 .ATF-container {
   width: 100vw;
   min-height: auto;
@@ -245,7 +245,7 @@
   text-align: center;
   margin-bottom: 40px;
 }
-
+/* duplicate code with .event fix it later */
 .intro .intro-1 .intro-button {
   padding: 16px 24px 30px;
   color: var(--white);
@@ -263,7 +263,7 @@
   margin-top: 20px;
 }
 
-.intro .intro-separator {
+.separator {
   width: 200px;
   border: none;
   height: 5px;
@@ -440,5 +440,99 @@
 
   .dinner .dinnerParty .dinner-image {
     width: 100%;
+  }
+}
+
+.event {
+  width: 100vw;
+  min-height: auto;
+  background-image: url("./images/Background-event-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding: 120px;
+  position: relative;
+}
+
+.event::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(173, 141, 73, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.event .event-container {
+  max-width: 660px;
+  width: auto;
+}
+/* duplicate value for title and text make a mixin later*/
+.event .event-title-1 {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+
+.event .event-title-2 {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+
+.event .event-text {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.event .intro-button {
+  padding: 16px 24px 30px;
+  color: var(--white);
+  background-color: var(--black);
+  width: 100%;
+  max-width: 453px;
+  height: 26px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .event .intro-button {
+    font-size: 15px;
+    height: auto;
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .event {
+    padding: 20px;
+  }
+
+  .event .event-title-1 {
+    font-size: 50px;
+  }
+  .event .event-title-2 {
+    font-size: 30px;
   }
 }
