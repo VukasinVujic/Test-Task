@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --white: #ffffff;
   --gold: #ad8d49;
@@ -557,8 +561,11 @@
   color: var(--white);
 }
 
-.event-info {
+.event-info-light {
   background-color: var(--gold);
+}
+
+.event-info {
   color: var(--white);
   padding: 50px;
   display: flex;
@@ -672,7 +679,6 @@
 }
 
 .event-light {
-  background-color: var(--gold);
   color: var(--white);
   padding: 50px;
 }
@@ -732,4 +738,48 @@
   .event-light .event-light-container .event-light-btn {
     font-size: 18px;
   }
+}
+
+.sponsors-info {
+  padding: 50px;
+  background-color: var(--black);
+  display: flex;
+  color: var(--white);
+  gap: 80px;
+}
+
+.vertical-separator {
+  width: 1px;
+  height: 100%;
+  background-color: var(--white);
+  margin: 0 10px;
+}
+
+.column-2 {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sponsors-info .sponsors-info-title {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+
+.sponsors-info .sponsors-info-text {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.sponsors-info-logo {
+  width: 160px;
+  height: 66px;
 }
