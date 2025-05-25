@@ -670,3 +670,66 @@
     font-size: 13px;
   }
 }
+
+.event-light {
+  background-color: var(--gold);
+  color: var(--white);
+  padding: 50px;
+}
+
+.event-light .event-light-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* duplicate code */
+.event-light .event-light-container .event-light-title {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* duplicate code */
+.event-light .event-light-container .event-light-text {
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* duplicate code */
+.event-light .event-light-container .event-light-btn {
+  padding: 16px 24px 30px;
+  color: var(--white);
+  background-color: var(--black);
+  width: 100%;
+  max-width: 300px;
+  height: 26px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .event-light .event-light-container .event-light-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 340px) {
+  .event-light .event-light-container .event-light-btn {
+    font-size: 18px;
+  }
+}
