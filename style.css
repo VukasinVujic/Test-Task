@@ -783,3 +783,52 @@ body {
   width: 160px;
   height: 66px;
 }
+
+.CTA {
+  width: 100vw;
+  min-height: auto;
+  background-image: url("./images/Background-CTA-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 492px;
+  justify-content: center;
+}
+
+.CTA-title {
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: -4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.CTA-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.CTA-btn {
+  padding: 16px 24px 30px;
+  color: var(--white);
+  background-color: var(--gold);
+  width: 100%;
+  max-width: 600px;
+  height: 26px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
