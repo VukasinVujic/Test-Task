@@ -31,11 +31,9 @@
         "https://connect.facebook.net/en_US/fbevents.js"
       );
 
-      // Replace XXXXXXXXXXXXXXX with your actual Pixel ID
       fbq("init", "1417647682698050");
       fbq("track", "PageView");
 
-      // Track Purchase event
       fbq("track", "Purchase", {
         value: 99.99,
         currency: "USD",
@@ -44,9 +42,7 @@
         transaction_id: "TRX87654321",
       });
     </script>
-    <!-- End Facebook Pixel Code -->
 
-    <!-- Facebook Pixel Noscript Code (for browsers with JavaScript disabled) -->
     <noscript>
       <img
         height="1"
@@ -55,10 +51,8 @@
         src="https://www.facebook.com/tr?id=1417647682698050&ev=PageView&noscript=1"
       />
     </noscript>
-    <!-- End Facebook Pixel Noscript Code -->
 
     <style>
-      /* Your existing styles here */
       * {
         margin: 0;
         padding: 0;
