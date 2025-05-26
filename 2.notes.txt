@@ -1,0 +1,6 @@
+https://www.digibiz24.com/en
+
+1. The animation under the title "This is Digibiz24" for the 3 elements is confusing and at first I thought 
+it is for scrolling which I did, and just moving it up and down makes me feel as if I made a scroll there by accident
+2. The CTA button should be the same color as other text on the page, get Your 30-Day Free Trial doesn't pop up visually, also make the text bolder and larger.
+3. The nav bar doesn't follow the user when he starts to scroll down, it should follow him as he does.
